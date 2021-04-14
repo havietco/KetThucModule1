@@ -2,36 +2,38 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta http-equiv="X-UA-Compatible" conNamet="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Document</title>
 </head>
 <body>
  <script>
   class Animal{
-      constructor(Ten,CanNang) {
-          this.Ten   = Ten;
-          this.CanNang = CanNang;
+      constructor(Name,Weight) {
+          this.Name   = Name;
+          this.Weight = Weight;
       }
-      setTen(newTen ) {
-          this.Ten = newTen;
+      setName(newName ) {
+          this.Name = newName;
       }
-      setCanNang(newCanNang) {
-          this.CanNang = newCanNang;
+      setWeight(newWeight) {
+          this.Weight = newWeight;
       }
-      getTen() {
-          return this.Ten;
+      getName() {
+          return this.Name;
       }
-      getCanNang() {
-          return this.CanNang;
+      getWeight() {
+          return this.Weight;
       }
       toString() {
-          document.write(`Con ${this.Ten} có cân nặng là ${this.CanNang} <br>`);
+          document.write(`Con ${this.Name} có cân nặng là ${this.Weight} <br>`);
       }
   }
-  var objAnimal1 = new Animal('Cat', 14.6);
+  objAnimal1 = new Animal('Elephant', 45.6);
   objAnimal1.toString();
-  var objAnimal2 = new Animal('Dog', 25);
+
+  objAnimal2 = new Animal('Dog', 26);
+
   objAnimal2.setName('Mouse');
   objAnimal2.toString();
 </script>
