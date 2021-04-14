@@ -5,9 +5,31 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Document</title>
- <script src="./js/main.js"></script>
+
 </head>
 <body>
+ <script>
+
+  //Tim phan tu trong mang 
+  function KiemTraMang(mang,a) {
+            var count = 0;
+            var viTri = 0;
+            for (let i = 0; i < mang.length; i++ ) {
+                if (mang[i] == a) {
+                    count = 1;
+                    viTri = i;
+                } 
+            }
+            if (count == 1) {
+                document.write(`Số ${a} có trong mảng ${mang} <br>`);
+                document.write(`Vị trí của số ${a} trong mảng là ${viTri}`);
+            } else {
+                document.write(`Số ${a} không có trong mảng ${mang}`);
+            }
+        }
+        var soNguyen = [1,2,13,4,5,16,7,18,9];
+        KiemTraMang(soNguyen,4);
+ </script>
  
 </body>
 </html>

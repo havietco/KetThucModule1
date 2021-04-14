@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
- <script src="./js/main.js"></script>
-</head>
-<body>
-<script>  
- // Giai phuong trinh bac nhat 
- let a = 5;
- let b = 8;
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    //  //Giải phưong trình bậc nhat ax+b=0
+    //   function giai_phuong_trinh_bac_nhat(a,b) {
+        
+    //     if (a == 0 && b == 0) {
+    //       document.write("Phương trình có vô số nghiệm");
+    //     } else if (a != 0 && b == 0) {
+    //       document.write("Phương trình có nghiệm x = 0");
+    //     } else if (a == 0 && b != 0) {
+    //       document.write("Phương trình vô nghiệm");
+    //     } else {
+    //       document.write("Phương trình có nghiệm X = " + -b/a);
 
+    //     console.log(x);
+    //   }
+    //   }
 
-</script>
-</body>
+    //   giai_phuong_trinh_bac_nhat(5, 8);
+
+      class giai_phuong_trinh_bac_nhat {
+        constructor () {
+          this.a;
+          this.b;
+          this.x;
+        }
+        giai_phuong_trinh_bac_nhat(a,b) {
+          if (this.a == 0 && this.b == 0) {
+          document.write("Phương trình có vô số nghiệm");
+        } else if (this.a != 0 && this.b == 0) {
+          document.write("Phương trình có nghiệm x = 0");
+        } else if (this.a == 0 && this.b != 0) {
+          document.write("Phương trình vô nghiệm");
+        } else {
+          document.write("Phương trình có nghiệm X = " + -b/a);
+
+        console.log(this.x);
+      }
+        }
+        
+      }
+      objGiaiPhuongTrinh = new giai_phuong_trinh_bac_nhat();
+      objGiaiPhuongTrinh.giai_phuong_trinh_bac_nhat(5,8);
+    </script>
+  </body>
 </html>
